@@ -1,6 +1,5 @@
-# Entities
-
 ## PinTrigger and Blocker
+
 * PinTrigger: This entity calls the triggeredBy method of one or more
   targets when it and another entity of a specific collision type overlap at
   the almost-same position.
@@ -14,8 +13,12 @@
 ### Sample project
 * http://www.gamecubate.com/playground/pin_triggers_and_blockers .
 
-## Controls
-* Controls: button, property slider, property joystick
+
+## Button, Property Slider, and Property Joystick
+
+* Button: 
+* PropertySlider: 
+* PropertyJoystick: 
 
 ### Installation
 * Put these into your lib/game/entities folder. Be careful to not overwrite existing files.
@@ -25,12 +28,14 @@
 * http://www.gamecubate.com/playground/player_test_rig .
 
 
-# Plugins
-
 ## Automata
 
+* AutomataBase: provides base functionality for cellular automata subclasses.
+* Conway: Game of Life automaton.
+* Shifter: this entity kills/births cells according to a direction function supplied by the client. The function decides, given a row and column, in which direction to shift a cell.
+
 ### Installation
-* Put these into your lib/plugins folder. Be careful to not overwrite existing files.
+* Put into your lib/plugins/gamecubate/automata/ folder. Be careful to not overwrite existing files.
 * Read the source code headers to better understand usage and options.
 
 ### Sample project
